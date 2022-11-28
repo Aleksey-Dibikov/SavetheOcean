@@ -1,17 +1,17 @@
-@font-face {
-  font-family: 'Kyiv Type Sans';
-  src: url("../fonts/KyivType2020-14-12/KyivType-VariableGX/KyivTypeSans-VarGX.ttf");
-  src: url("../fonts/KyivType2020-14-12/KyivType-VariableGX/KyivTypeSans-VarGX.ttf?#iefix") format("embedded-opentype");
-}
-
 :root {
   --main-color: #101010;
   --accent-color: #24A9F4;
   --dark-bg-color: #101010;
   --description-color: #BEBEBE;
   --title-second-color: #ffffff;
+  --fonts: "Syncopate";
 }
 
+@font-face {
+  font-family: "Kyiv Type Sans";
+  src: url("../fonts/KyivType2020-14-12/KyivType-VariableGX/KyivTypeSans-VarGX.ttf");
+  src: url("../fonts/KyivType2020-14-12/KyivType-VariableGX/KyivTypeSans-VarGX.ttf?#iefix") format("embedded-opentype");
+}
 html {
   box-sizing: border-box;
 }
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: 'Syncopate';
+  font-family: var(--fonts);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
@@ -60,6 +60,13 @@ img {
   list-style: none;
 }
 
+.container {
+  width: 1920px;
+  padding: 0 112px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .button {
   width: 251px;
   height: 48px;
@@ -72,13 +79,7 @@ img {
   color: var(--title-second-color);
   background-color: var(--main-color);
   cursor: pointer;
-}
-
-.container {
-  width: 1920px;
-  padding: 0 112px;
-  margin-left: auto;
-  margin-right: auto;
+  transition-duration: 250ms;
 }
 
 .header__container {
@@ -99,7 +100,7 @@ img {
 .header::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 1696px;
   top: 111px;
   left: 112px;
@@ -177,7 +178,7 @@ img {
 .title::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 400px;
   top: 288px;
   left: 112px;
@@ -185,7 +186,7 @@ img {
 }
 
 .text {
-  font-family: 'Kyiv Type Sans', sans-serif;
+  font-family: "Kyiv Type Sans", sans-serif;
   font-weight: 1;
   font-size: 16px;
   line-height: 1.5;
@@ -200,7 +201,7 @@ img {
 .hero__text::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 400px;
   top: 380px;
   left: 112px;
@@ -215,7 +216,7 @@ img {
 .menu::before {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 400px;
   top: 726px;
   left: 112px;
@@ -225,7 +226,7 @@ img {
 .menu::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 400px;
   top: 866px;
   left: 112px;
@@ -240,6 +241,7 @@ img {
   line-height: 1.06;
   text-transform: uppercase;
   color: var(--main-color);
+  transition-duration: 250ms;
 }
 
 .navigation:not(:last-child) {
@@ -248,13 +250,13 @@ img {
 
 .navigation:hover {
   color: var(--accent-color);
-  fill: var(--accent-color);
+  stroke: var(--accent-color);
 }
 
 .navigation::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 400px;
   top: 796px;
   left: 112px;
@@ -282,11 +284,11 @@ img {
 .item {
   height: 402px;
   border: 1px solid var(--main-color);
+  transition-duration: 250ms;
 }
 
-.item:hover,
-.item:focus {
-  background: var(--accent-color);
+.item:hover {
+  box-shadow: -8px 8px var(--accent-color);
 }
 
 .card {
@@ -316,7 +318,7 @@ img {
 }
 
 .connection__form-title {
-  width: calc(100% / 12 * 8);
+  width: 66.6666666667%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
@@ -332,7 +334,7 @@ img {
   left: 542px;
   top: 1718px;
   padding: 12px 0 12px 24px;
-  font-family: 'Kyiv Type Sans', sans-serif;
+  font-family: "Kyiv Type Sans", sans-serif;
   font-weight: 0;
   font-size: 18px;
   line-height: 1.33;
@@ -385,6 +387,7 @@ img {
   background-color: var(--title-second-color);
   color: var(--main-color);
   cursor: pointer;
+  transition-duration: 250ms;
 }
 
 .social__icon {
@@ -416,5 +419,4 @@ img {
 .social__button:hover {
   background-color: var(--accent-color);
   border: none;
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

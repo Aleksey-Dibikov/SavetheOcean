@@ -11,7 +11,7 @@
 <path d="M304.762 31.384v-6.382h-19.612v-7.483h17.63v-6.25h-17.63v-4.27h19.44v-6.426h-26.811v30.812h26.983z"></path>
 </symbol>
 <symbol id="icon-chevron-left" viewBox="0 0 32 32">
-<path fill="none" stroke="#101010" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.6667" d="M12 8l8 8-8 8"></path>
+<path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.6667" d="M12 8l8 8-8 8"></path>
 </symbol>
 <symbol id="icon-close-menu" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="4" stroke-width="2.2857" d="M29.714 2.286l-27.429 27.429"></path>

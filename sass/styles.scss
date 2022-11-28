@@ -1,58 +1,7 @@
-@font-face {
-    font-family: 'Kyiv Type Sans';
-    src: url('../fonts/KyivType2020-14-12/KyivType-VariableGX/KyivTypeSans-VarGX.ttf');
-    src: url('../fonts/KyivType2020-14-12/KyivType-VariableGX/KyivTypeSans-VarGX.ttf?#iefix') format('embedded-opentype'),
-}
-
 @import './utils/variables';
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: 'Syncopate';
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    text-transform: uppercase;
-    color: var(--main-color);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.list {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none;
-}
+@import './base/fonts';
+@import './base/common';
+@import './base/container';
 
 .button {
     width: 251px;
@@ -66,14 +15,10 @@ img {
     color: var(--title-second-color);
     background-color: var(--main-color);
     cursor: pointer;
+    transition-duration: 250ms;
 }
 
-.container {
-    width: 1920px;
-    padding: 0 112px;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 .header__container {
     display: flex;
@@ -234,6 +179,7 @@ img {
     line-height: 1.06;
     text-transform: uppercase;
     color: var(--main-color);
+    transition-duration: 250ms;
 }
 
 .navigation:not(:last-child) {
@@ -242,7 +188,7 @@ img {
 
 .navigation:hover {
     color: var(--accent-color);
-    fill: var(--accent-color);
+    stroke: var(--accent-color);
 }
 
 .navigation::after {
@@ -276,11 +222,11 @@ img {
 .item {
     height: 402px;
     border: 1px solid var(--main-color);
+    transition-duration: 250ms;
 }
 
-.item:hover,
-.item:focus {
-    background: var(--accent-color);
+.item:hover {
+    box-shadow: -8px 8px var(--accent-color);
 }
 
 .card {
@@ -380,6 +326,7 @@ img {
     background-color: var(--title-second-color);
     color: var(--main-color);
     cursor: pointer;
+    transition-duration: 250ms;
 }
 
 .social__icon {
