@@ -15,166 +15,215 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <header>
-      <div>
+    <header class="header">
+      <div class="container header__container">
         <a class="logo" href="./">Save<span class="web-logo">the</span>Ocean</a>
-        <ul class="list">
-          <li>
-            <a class="link contacts" href="tell:+380931232323"
-              >+38 (093 ) 123-23-23</a
-            >
-          </li>
-          <li>
-            <span class="description">Mo-Fri 9:00-18:00</span>
-          </li>
-        </ul>
+        <div class="info">
+          <a class="link contacts" href="tell:+380931232323">
+            +38 (093 ) 123-23-23
+          </a>
+          <span class="description">Mo-Fri 9:00-18:00</span>
+        </div>
         <button class="nav-btn" type="button">
-          <svg>
-            <use href="./img/light.svg"></use>
+          <svg class="icon-theme" width="48" height="32">
+            <use href="./img/svg/sprite.svg#icon-light-theme"></use>
           </svg>
         </button>
         <button class="nav-btn" type="button">
-          <svg>
-            <use href="./img/menu.svg"></use>
+          <svg width="48" height="48">
+            <use href="./img/svg/sprite.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
     </header>
     <main>
-      <section>
-        <h1>ABOUT THE <span>POJECT</span></h1>
-        <h2 class="title">A nice place for powerful slogan</h2>
-        <p class="text">
-          The purpose of lorem ipsum is to create a natural looking block of
-          text (sentence, paragraph, page, etc.) that doesn't distract from the
-          layout. A practice not without controversy, laying out pages with
-          meaningless filler text can be very useful when the focus is meant to
-          be on design, not content.
-        </p>
-        <nav>
-          <a class="link navigation" href="">our projects</a>
-          <a class="link navigation" href="">our stories</a>
-        </nav>
-        <img src="./img/first-photo.jpg" alt="boxed water is better" />
+      <section class="hero">
+        <div class="container hero__container">
+          <div>
+            <h1>
+              <svg width="400" height="42">
+                <use href="./img/svg/sprite.svg#icon-about"></use>
+              </svg>
+              <svg class="project">
+                <use href="./img/svg/sprite.svg#icon-project"></use>
+              </svg>
+            </h1>
+            <h2 class="title">A nice place for powerful slogan</h2>
+            <p class="text hero__text">
+              The purpose of lorem ipsum is to create a natural looking block of
+              text (sentence, paragraph, page, etc.) that doesn't distract from
+              the layout. A practice not without controversy, laying out pages
+              with meaningless filler text can be very useful when the focus is
+              meant to be on design, not content.
+            </p>
+            <nav class="menu">
+              <a class="link navigation" href="">
+                our projects
+                <svg width="24" height="24">
+                  <use href="./img/svg/sprite.svg#icon-chevron-left"></use>
+                </svg>
+              </a>
+              <a class="link navigation" href="">
+                our stories
+                <svg width="24" height="24">
+                  <use href="./img/svg/sprite.svg#icon-chevron-left"></use>
+                </svg>
+              </a>
+            </nav>
+          </div>
+          <img src="./img/first-photo.jpg" alt="boxed water is better" />
+        </div>
+      </section>
+      <section class="news">
+        <div class="container">
+          <h2 class="title__list">Latest News</h2>
+          <ul class="list news__list">
+            <li class="item">
+              <picture>
+                <img src="./img/firstLatestNews.jpg" alt="Latest News" />
+              </picture>
+              <div class="card">
+                <h3 class="card__heading">WHAT IS GYM?</h3>
+                <p class="text">
+                  The Global Youth Mentor Program gives motivated Youth Leaders
+                  the tools and support to create lasting systemic change in
+                  their communities.
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <picture>
+                <img src="./img/secondLatestNews.jpg" alt="Latest News" />
+              </picture>
+              <div class="card">
+                <h3 class="card__heading">
+                  Here is the result of our last project in africa
+                </h3>
+                <p class="text">
+                  The purpose of lorem ipsum is to create a natural looking
+                  block of text (sentence, paragraph, page, etc.)
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <picture>
+                <img src="./img/thirdLatestNews.jpg" alt="Latest News" />
+              </picture>
+              <div class="card">
+                <h3 class="card__heading">
+                  Time to change something. There is no time left
+                </h3>
+                <p class="text">
+                  The purpose of lorem ipsum is to create a natural looking
+                  block of text (sentence, paragraph, page, etc.) that doesn't.
+                </p>
+              </div>
+            </li>
+            <li class="item">
+              <picture>
+                <img src="./img/4LatestNews.jpg" alt="Latest News" />
+              </picture>
+              <div class="card">
+                <h3 class="card__heading">
+                  How can we change the situation with the global warming
+                  cleaning the ocean?
+                </h3>
+                <p class="text">
+                  The purpose of lorem ipsum is to create a natural looking
+                  block of text sentence.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
       <section>
-        <h2 class="title-list">Latest News</h2>
-        <ul class="list">
-          <li>
-            <picture>
-              <img src="./img/firstLatestNews.jpg" alt="Latest News" />
-            </picture>
-            <h3 class="card-heading">WHAT IS GYM?</h3>
-            <p class="text">
-              The Global Youth Mentor Program gives motivated Youth Leaders the
-              tools and support to create lasting systemic change in their
-              communities.
-            </p>
-          </li>
-          <li>
-            <picture>
-              <img src="./img/secondLatestNews.jpg" alt="Latest News" />
-            </picture>
-            <h3 class="card-heading">
-              Here is the result of our last project in africa
-            </h3>
-            <p class="text">
-              The purpose of lorem ipsum is to create a natural looking block of
-              text (sentence, paragraph, page, etc.)
-            </p>
-          </li>
-          <li>
-            <picture>
-              <img src="./img/thirdLatestNews.jpg" alt="Latest News" />
-            </picture>
-            <h3 class="card-heading">
-              Time to change something. There is no time left
-            </h3>
-            <p class="text">
-              The purpose of lorem ipsum is to create a natural looking block of
-              text (sentence, paragraph, page, etc.) that doesn't.
-            </p>
-          </li>
-          <li>
-            <picture>
-              <img src="./img/4Latest News.jpg" alt="Latest News" />
-            </picture>
-            <h3 class="card-heading">
-              How can we change the situation with the global warming cleaning
-              the ocean?
-            </h3>
-            <p class="text">
-              The purpose of lorem ipsum is to create a natural looking block of
-              text sentence.
-            </p>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="form-title">
-          Subscribe to receive reports and breaking news from save the ocean
-          team
-        </h2>
-        <form>
-          <input class="input" type="email" placeholder="Email" />
-          <button class="button" type="submit">send</button>
-        </form>
+        <div class="container">
+          <div class="connection container__connection">
+            <h2 class="form-title connection__form-title">
+              Subscribe to receive reports and breaking news from save the ocean
+              team
+            </h2>
+            <form class="form">
+              <input class="input" type="email" placeholder="Email" />
+              <button class="button form-btn" type="submit">send</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="dark-bg">
-      <a class="logo" href="./">Save<span class="web-logo">the</span>Ocean</a>
-      <section>
-        <h2 class="form-title">SUBSCRIBE TO OUR SOCIAL MEDIA</h2>
-        <ul class="list">
-          <li>
-            <a class="button link" href="">Facebook</a>
-          </li>
-          <li>
-            <a
-              class="button link"
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              >Instagram</a
-            >
-          </li>
-          <li>
-            <a
-              class="button link"
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Telegram
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 class="form-title">DO NOT HESITATE TO CONTACT US</h2>
-        <ul class="list">
-          <li>
-            <a class="link footer-contacts" href="tel:++380931232323"
-              >+38( 093 ) 123-23-23</a
-            >
-            <span class="description">Mo-Fri 9:00-18:00</span>
-          </li>
-          <li>
-            <a class="link footer-contacts" href="mailto:savetheocean@.org">
-              savetheocean@.org
-            </a>
-            <span class="description">for projects and questions</span>
-          </li>
-          <li>
-            <a class="link footer-contacts" href="mailto:hrsavetheocean@.org"
-              >hrsavetheocean@.org</a
-            >
-            <span class="description">for jobs</span>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <a class="logo dark-bg__logo" href="./"
+          >Save<span class="web-logo">the</span>Ocean</a
+        >
+        <div class="footer-nav">
+          <section>
+            <h2 class="form-title dark-bg__form-title">
+              SUBSCRIBE TO OUR SOCIAL MEDIA
+            </h2>
+            <ul class="list social">
+              <li>
+                <a class="link social__button" href="">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#icon-facebook"></use>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a class="link social__button" href="">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#icon-instagram"></use>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a class="link social__button" href="">
+                  <svg class="social__icon">
+                    <use href="./img/svg/sprite.svg#icon-telegram"></use>
+                  </svg>
+                  Telegram
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2 class="form-title dark-bg__form-title">
+              DO NOT HESITATE TO CONTACT US
+            </h2>
+            <ul class="list contacts__list">
+              <li class="contacts__item">
+                <a class="link footer__contacts" href="tel:++380931232323"
+                  >+38( 093 ) 123-23-23</a
+                >
+                <span class="description">Mo-Fri 9:00-18:00</span>
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="link footer__contacts"
+                  href="mailto:savetheocean@.org"
+                >
+                  savetheocean@.org
+                </a>
+                <span class="description">for projects and questions</span>
+              </li>
+              <li class="contacts__item">
+                <a
+                  class="link footer__contacts"
+                  href="mailto:hrsavetheocean@.org"
+                  >hrsavetheocean@.org</a
+                >
+                <span class="description">for jobs</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
