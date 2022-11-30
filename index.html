@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a class="logo" href="./">Save<span class="web-logo">the</span>Ocean</a>
         <div class="info">
@@ -27,28 +27,69 @@
           </a>
           <span class="description">Mo-Fri 9:00-18:00</span>
         </div>
-        <button class="nav-btn" type="button">
+        <button class="nav-btn nav-btn__theme" type="button">
           <svg class="icon-theme" width="48" height="32">
             <use href="./img/svg/sprite.svg#icon-light-theme"></use>
           </svg>
         </button>
-        <button class="nav-btn" type="button">
-          <svg width="48" height="48">
-            <use href="./img/svg/sprite.svg#icon-menu"></use>
+        <button class="nav-btn nav-btn__menu" type="button" data-menu-button>
+          <svg>
+            <use
+              class="icon-burger"
+              href="./img/svg/sprite.svg#icon-menu"
+            ></use>
+            <use
+              width="16"
+              class="icon-cross"
+              href="./img/svg/sprite.svg#icon-close-menu"
+            ></use>
           </svg>
         </button>
       </div>
-    </header> -->
+    </header>
+    <div class="mobile-menu" data-menu>
+      <ul>
+        <li>About us</li>
+        <li>Our Projects</li>
+        <li>stories</li>
+        <li>join the team</li>
+      </ul>
+      <button class="nav-btn nav-btn__theme" type="button">
+        <svg class="icon-theme" width="48" height="32">
+          <use href="./img/svg/sprite.svg#icon-light-theme"></use>
+        </svg>
+      </button>
+      <div>
+        <h3>contact us</h3>
+        <ul>
+          <li>
+            <a class="link contacts" href="tel:++380931232323"
+              >+38( 093 ) 123-23-23</a
+            >
+            <span class="description">Mo-Fri 9:00-18:00</span>
+          </li>
+          <li>
+            <a class="link contacts" href="mailto:savetheocean@.org">
+              savetheocean@.org
+            </a>
+            <span class="description">for projects and questions</span>
+          </li>
+          <li>
+            <a class="link contacts" href="mailto:hrsavetheocean@.org"
+              >hrsavetheocean@.org</a
+            >
+            <span class="description">for jobs</span>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
-          <div class="hero__section">
+          <div class="main__menu">
             <h1>
               <svg class="hero__title">
-                <use href="./img/svg/sprite.svg#icon-about"></use>
-              </svg>
-              <svg class="project">
-                <use href="./img/svg/sprite.svg#icon-project"></use>
+                <use href="./img/svg/sprite.svg#icon-hero-title"></use>
               </svg>
             </h1>
             <h2 class="title">A nice place for powerful slogan</h2>
@@ -74,9 +115,13 @@
               </a>
             </nav>
           </div>
-          <img src="./img/first-photo.jpg" alt="boxed water is better" />
+          <img
+            class="hero__img"
+            src="./img/first-photo.jpg"
+            alt="boxed water is better"
+          />
         </div>
-      </section> -->
+      </section>
       <section class="news">
         <div class="container">
           <h2 class="title__list">Latest News</h2>
@@ -165,7 +210,12 @@
             <h2 class="dark-bg__title">SUBSCRIBE TO OUR SOCIAL MEDIA</h2>
             <ul class="list social">
               <li>
-                <a class="link social__button" href="">
+                <a
+                  class="link social__button"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="social__icon">
                     <use href="./img/svg/sprite.svg#icon-facebook"></use>
                   </svg>
@@ -173,7 +223,12 @@
                 </a>
               </li>
               <li>
-                <a class="link social__button" href="">
+                <a
+                  class="link social__button"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="social__icon">
                     <use href="./img/svg/sprite.svg#icon-instagram"></use>
                   </svg>
@@ -181,7 +236,12 @@
                 </a>
               </li>
               <li>
-                <a class="link social__button" href="">
+                <a
+                  class="link social__button"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <svg class="social__icon">
                     <use href="./img/svg/sprite.svg#icon-telegram"></use>
                   </svg>
@@ -221,5 +281,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

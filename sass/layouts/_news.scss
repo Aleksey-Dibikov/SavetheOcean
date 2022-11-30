@@ -6,15 +6,29 @@
     display: grid;
     gap: 24px;
     grid-template-rows: repeat(1, auto);
+    width: 288px;
+    margin: 0 auto;
 
     @media screen and (min-width: 768px) {
-        gap: 32px;
-        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        grid-template-columns: repeat(2, 224px);
+        grid-template-rows: none;
+        width: 224px;
+        margin: 0;
     }
 
     @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(4, 224px);
+    }
+
+    @media screen and (min-width: 1366px) {
+        gap: 24px;
+        grid-template-columns: repeat(4, 288px);
+    }
+
+    @media screen and (min-width: 1920px) {
         gap: 32px;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 400px);
     }
 }
 

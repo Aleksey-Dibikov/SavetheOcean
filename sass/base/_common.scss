@@ -50,8 +50,32 @@ img {
     position: absolute;
     display: block;
     content: '';
-    width: 1696px;
-    top: 111px;
-    left: 112px;
+    width: 325px;
+    left: calc((375px - 325px) / 2);
+    top: 82px;
     border: 1px solid var(--main-color);
+
+    @media screen and (min-width: 768px) {
+        width: 704px;
+        left: calc((768px - 704px) / 2);
+        top: 111px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 944px;
+        left: calc((1024px - 944px) / 2);
+        top: 111px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        width: 1224px;
+        left: calc((1366px - 1224px) / 2);
+        top: 111px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 1696px;
+        left: calc((1920px - 1696px) / 2);
+        top: 111px;
+    }
 }

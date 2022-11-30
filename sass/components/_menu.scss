@@ -1,3 +1,15 @@
+.main__menu {
+    @media screen and (max-width: 767.98px) {
+        width: 328px;
+        margin: 0 auto 16px auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023.98px) {
+        width: 704px;
+        margin-bottom: 30px;
+    }
+}
+
 .menu {
     display: flex;
     flex-direction: column;

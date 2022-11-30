@@ -2,14 +2,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
-    line-height: 1.06;
+    font-size: 14px;
+    line-height: 1.07;
     text-transform: uppercase;
     color: var(--main-color);
     transition-duration: 250ms;
     border-top: 1px solid var(--main-color);
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 16px 0;
+
+    @media screen and (min-width: 1366px) {
+        font-size: 16px;
+        line-height: 1.06;
+    }
+
+    @media screen and (min-width: 1920px) {
+        padding: 24px 0;
+    }
 }
 
 .navigation:hover,

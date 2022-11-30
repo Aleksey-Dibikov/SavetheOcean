@@ -1,16 +1,36 @@
 .header__container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    height: 127px;
+    height: 99px;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+        height: 127px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 127px;
+        margin-bottom: 16px;
+    }
 }
 
 .info {
     display: inline-flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: 38px;
+    
+    @media screen and (max-width: 1023.98px) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+        margin-right: 38px;
+    }
 }
 
 .contacts {
