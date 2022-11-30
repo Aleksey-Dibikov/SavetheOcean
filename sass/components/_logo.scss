@@ -1,0 +1,21 @@
+.logo {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.04;
+    color: var(--main-color);
+    text-decoration: none;
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+        line-height: 1.03;
+    }
+}
+
+.web-logo {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.dark-bg__logo {
+    color: var(--title-second-color);
+}

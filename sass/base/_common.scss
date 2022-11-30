@@ -45,3 +45,13 @@ img {
     padding-left: 0;
     list-style: none;
 }
+
+.header::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 1696px;
+    top: 111px;
+    left: 112px;
+    border: 1px solid var(--main-color);
+}

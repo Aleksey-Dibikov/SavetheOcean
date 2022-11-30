@@ -1,0 +1,79 @@
+.hero__title {
+    width: 400px;
+    height: 42px;
+}
+
+.title {
+    font-size: 15px;
+    line-height: 1.07;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin: 24px 0;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+    padding: 28px 0 24px 0;
+}
+
+.title__list {
+    font-size: 24px;
+    line-height: 1.04;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 24px;
+    
+    @media screen and (min-width: 768px) {
+        font-size: 32px;
+        line-height: 1.03;
+    }
+
+    @media screen and (min-width: 1366px) {
+        font-size: 36px;
+    }
+}
+
+.form-title {
+    font-size: 24px;
+    line-height: 1.04;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    color: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+        width: calc(100% * 5 / 6);
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: calc(100% * 11 / 11);
+        font-size: 32px;
+        line-height: 1.03;
+    }
+
+    @media screen and (min-width: 1366px) {
+        width: calc(100% * 9 / 10);
+        font-size: 36px;
+        line-height: 1.03;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: calc(100% * 5 / 8);
+    }
+}
+
+.dark-bg__title {
+    font-size: 32px;
+    line-height: 1.03;
+    text-transform: uppercase;
+    color: var(--title-second-color);
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 1.04;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 36px;
+        line-height: 1.03;
+    }
+}

@@ -1,0 +1,87 @@
+.button {
+    width: 251px;
+    height: 48px;
+    left: 1123px;
+    top: 1718px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    text-align: center;
+    color: var(--title-second-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+    transition-duration: 250ms;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav-btn:not(:last-child) {
+    margin-right: 38px;
+}
+
+.form-btn {
+    
+    @media screen and (max-width: 767.98px) {
+        width: 328px;
+        margin: 16px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 208px;
+        position: absolute;
+        top: 0;
+        left: 65%;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 251px;
+        left: 67.5%;
+    }
+
+    @media screen and (min-width: 1366px) {
+        left: 63.5%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        left: 60%;
+    }
+}
+
+.social__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: var(--title-second-color);
+    color: var(--main-color);
+    cursor: pointer;
+    transition-duration: 250ms;
+
+    @media screen and (min-width: 768px) {
+        width: 196px;
+    }
+}
+
+.button:hover,
+.social__button:hover,
+.button:focus,
+.social__button:focus {
+    background-color: var(--accent-color);
+    border: none;
+}

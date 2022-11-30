@@ -1,0 +1,41 @@
+.container__connection {
+    margin-bottom: 120px;
+    text-align: center;
+    padding: 56px 0;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+
+    @media screen and (min-width: 1024px) {
+        padding: 94px 0;
+    }
+
+    @media screen and (min-width: 1366px) {
+        padding: 88px 0;
+    }
+}
+
+.form {
+    position: relative;
+}
+
+.input {
+    width: 328px;
+    height: 48px;
+    left: 542px;
+    top: 1718px;
+    padding: 12px 0 12px 24px;
+    font-family: 'Kyiv Type Sans',
+        sans-serif;
+    font-weight: 0;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--main-color);
+
+    @media screen and (min-width: 768px) {
+        width: 624px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 831px;
+    }
+}

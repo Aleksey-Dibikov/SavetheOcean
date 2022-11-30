@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <a class="logo" href="./">Save<span class="web-logo">the</span>Ocean</a>
         <div class="info">
@@ -38,13 +38,13 @@
           </svg>
         </button>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container hero__container">
-          <div>
+          <div class="hero__section">
             <h1>
-              <svg width="400" height="42">
+              <svg class="hero__title">
                 <use href="./img/svg/sprite.svg#icon-about"></use>
               </svg>
               <svg class="project">
@@ -76,11 +76,11 @@
           </div>
           <img src="./img/first-photo.jpg" alt="boxed water is better" />
         </div>
-      </section>
+      </section> -->
       <section class="news">
         <div class="container">
           <h2 class="title__list">Latest News</h2>
-          <ul class="list news__list">
+          <ul class="list news__list" #="scroll">
             <li class="item">
               <picture>
                 <img src="./img/firstLatestNews.jpg" alt="Latest News" />
@@ -143,7 +143,7 @@
       <section>
         <div class="container">
           <div class="connection container__connection">
-            <h2 class="form-title connection__form-title">
+            <h2 class="form-title">
               Subscribe to receive reports and breaking news from save the ocean
               team
             </h2>
@@ -161,10 +161,8 @@
           >Save<span class="web-logo">the</span>Ocean</a
         >
         <div class="footer-nav">
-          <section>
-            <h2 class="form-title dark-bg__form-title">
-              SUBSCRIBE TO OUR SOCIAL MEDIA
-            </h2>
+          <section class="footer__section">
+            <h2 class="dark-bg__title">SUBSCRIBE TO OUR SOCIAL MEDIA</h2>
             <ul class="list social">
               <li>
                 <a class="link social__button" href="">
@@ -193,9 +191,7 @@
             </ul>
           </section>
           <section>
-            <h2 class="form-title dark-bg__form-title">
-              DO NOT HESITATE TO CONTACT US
-            </h2>
+            <h2 class="dark-bg__title">DO NOT HESITATE TO CONTACT US</h2>
             <ul class="list contacts__list">
               <li class="contacts__item">
                 <a class="link footer__contacts" href="tel:++380931232323"

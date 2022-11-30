@@ -1,0 +1,19 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.06;
+    text-transform: uppercase;
+    color: var(--main-color);
+    transition-duration: 250ms;
+    border-top: 1px solid var(--main-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.navigation:hover,
+.navigation:focus {
+    color: var(--accent-color);
+    stroke: var(--accent-color);
+}
