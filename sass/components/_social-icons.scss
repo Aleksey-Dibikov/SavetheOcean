@@ -3,3 +3,14 @@
     height: 24px;
     margin-right: 10px;
 }
+
+.mobile-social__icon {
+    width: 32px;
+    height: 32px;
+    transition-duration: 250ms;
+}
+
+.mobile-social__icon:hover,
+.mobile-social__icon:focus {
+    fill: var(--accent-color);
+}

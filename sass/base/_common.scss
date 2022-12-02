@@ -17,6 +17,16 @@ body {
     color: var(--main-color);
 }
 
+body.light-theme {
+    background-color: var(--title-second-color);
+    color: var(--dark-theme-color);
+}
+
+body.dark-theme {
+    background-color: var(--dark-theme-color);
+    color: var(--title-second-color);
+}
+
 h1,
 h2,
 h3,
@@ -51,31 +61,25 @@ img {
     display: block;
     content: '';
     width: 325px;
-    left: calc((375px - 325px) / 2);
+    left: 50%;
+    transform: translate(-50%, 0);
     top: 82px;
-    border: 1px solid var(--main-color);
+    border: 1px solid currentColor;
 
     @media screen and (min-width: 768px) {
         width: 704px;
-        left: calc((768px - 704px) / 2);
         top: 111px;
     }
 
     @media screen and (min-width: 1024px) {
         width: 944px;
-        left: calc((1024px - 944px) / 2);
-        top: 111px;
     }
 
     @media screen and (min-width: 1366px) {
         width: 1224px;
-        left: calc((1366px - 1224px) / 2);
-        top: 111px;
     }
 
     @media screen and (min-width: 1920px) {
         width: 1696px;
-        left: calc((1920px - 1696px) / 2);
-        top: 111px;
     }
 }

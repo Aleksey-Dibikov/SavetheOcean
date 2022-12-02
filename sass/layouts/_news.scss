@@ -11,9 +11,8 @@
 
     @media screen and (min-width: 768px) {
         gap: 16px;
-        grid-template-columns: repeat(2, 224px);
+        grid-template-columns: repeat(4, 224px);
         grid-template-rows: none;
-        width: 224px;
         margin: 0;
     }
 
@@ -32,7 +31,17 @@
     }
 }
 
+.scroll-container {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        display: block;
+        width: 100%;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+}
+
 .card {
+    border-top: 1px solid currentColor;
     padding: 11px 24px 24px 24px;
 
     @media screen and (min-width: 768px) {
@@ -44,7 +53,6 @@
     font-size: 16px;
     line-height: 1.25;
     text-transform: uppercase;
-    color: var(--main-color);
     margin-bottom: 4px;
 
     @media screen and (min-width: 768px) {
@@ -60,7 +68,7 @@
 
 .item {
     height: 370px;
-    border: 1px solid var(--main-color);
+    border: 1px solid currentColor;
     transition-duration: 250ms;
 
     @media screen and (min-width: 768px) {

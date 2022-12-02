@@ -2,8 +2,8 @@
     margin-bottom: 120px;
     text-align: center;
     padding: 56px 0;
-    border-top: 1px solid var(--main-color);
-    border-bottom: 1px solid var(--main-color);
+    border-top: 1px solid currentColor;
+    border-bottom: 1px solid currentColor;
 
     @media screen and (min-width: 1024px) {
         padding: 94px 0;
@@ -29,7 +29,6 @@
     font-weight: 0;
     font-size: 18px;
     line-height: 1.33;
-    color: var(--main-color);
 
     @media screen and (min-width: 768px) {
         width: 624px;

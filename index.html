@@ -27,19 +27,38 @@
           </a>
           <span class="description">Mo-Fri 9:00-18:00</span>
         </div>
-        <button class="nav-btn nav-btn__theme" type="button">
-          <svg class="icon-theme" width="48" height="32">
-            <use href="./img/svg/sprite.svg#icon-light-theme"></use>
-          </svg>
-        </button>
+        <div class="theme-switch__control">
+          <div aria-hidden="true" class="theme-switch__marker light-sun">
+            <svg class="icon-theme">
+              <use href="./img/svg/sprite.svg#icon-light-theme"></use>
+            </svg>
+          </div>
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            id="theme-switch-toggle"
+            aria-label="Switch between dark and light theme"
+          />
+          <label
+            aria-hidden="true"
+            class="theme-switch__track"
+            for="theme-switch-toggle"
+          >
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker dark-moon">
+            <svg class="icon-theme">
+              <use href="./img/svg/sprite.svg#icon-dark-theme"></use>
+            </svg>
+          </div>
+        </div>
         <button class="nav-btn nav-btn__menu" type="button" data-menu-button>
-          <svg>
+          <svg class="nav-icon">
             <use
               class="icon-burger"
               href="./img/svg/sprite.svg#icon-menu"
             ></use>
             <use
-              width="16"
               class="icon-cross"
               href="./img/svg/sprite.svg#icon-close-menu"
             ></use>
@@ -48,39 +67,83 @@
       </div>
     </header>
     <div class="mobile-menu" data-menu>
-      <ul>
-        <li>About us</li>
-        <li>Our Projects</li>
-        <li>stories</li>
-        <li>join the team</li>
+      <ul class="list mobile-list">
+        <li class="mobile-item">About us</li>
+        <li class="mobile-item">Our Projects</li>
+        <li class="mobile-item">stories</li>
+        <li class="mobile-item">join the team</li>
       </ul>
-      <button class="nav-btn nav-btn__theme" type="button">
-        <svg class="icon-theme" width="48" height="32">
-          <use href="./img/svg/sprite.svg#icon-light-theme"></use>
-        </svg>
-      </button>
       <div>
-        <h3>contact us</h3>
-        <ul>
-          <li>
-            <a class="link contacts" href="tel:++380931232323"
-              >+38( 093 ) 123-23-23</a
-            >
-            <span class="description">Mo-Fri 9:00-18:00</span>
-          </li>
-          <li>
-            <a class="link contacts" href="mailto:savetheocean@.org">
-              savetheocean@.org
-            </a>
-            <span class="description">for projects and questions</span>
-          </li>
-          <li>
-            <a class="link contacts" href="mailto:hrsavetheocean@.org"
-              >hrsavetheocean@.org</a
-            >
-            <span class="description">for jobs</span>
-          </li>
-        </ul>
+        <div class="theme-switch__control">
+          <div aria-hidden="true" class="theme-switch__marker light-sun">
+            <svg class="icon-theme">
+              <use href="./img/svg/sprite.svg#icon-light-theme"></use>
+            </svg>
+          </div>
+          <input
+            class="theme-switch__toggle"
+            type="checkbox"
+            name="theme"
+            aria-label="Switch between dark and light theme"
+          />
+          <label
+            aria-hidden="true"
+            class="theme-switch__track"
+            for="theme-switch-toggle"
+          >
+          </label>
+          <div aria-hidden="true" class="theme-switch__marker dark-moon">
+            <svg class="icon-theme">
+              <use href="./img/svg/sprite.svg#icon-dark-theme"></use>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h3 class="mobile-title">contact us</h3>
+          <ul class="list">
+            <li class="mobile-contacts__item">
+              <a class="link mobile-contacts" href="tel:++380931232323"
+                >+38( 093 ) 123-23-23</a
+              >
+              <span class="mobile-description">Mo-Fri 9:00-18:00</span>
+            </li>
+            <li class="mobile-contacts__item">
+              <a class="link mobile-contacts" href="mailto:savetheocean@.org">
+                savetheocean@.org
+              </a>
+              <span class="mobile-description">for projects and questions</span>
+            </li>
+            <li class="mobile-contacts__item">
+              <a class="link mobile-contacts" href="mailto:hrsavetheocean@.org"
+                >hrsavetheocean@.org</a
+              >
+              <span class="mobile-description">for jobs</span>
+            </li>
+          </ul>
+          <ul class="list mobile-social__list">
+            <li class="mobile-social__icon">
+              <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                <svg class="mobile-social__icon">
+                  <use href="./img/svg/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social__icon">
+              <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                <svg class="mobile-social__icon">
+                  <use href="./img/svg/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-social__icon">
+              <a class="link" href="" target="_blank" rel="noopener noreferrer">
+                <svg class="mobile-social__icon">
+                  <use href="./img/svg/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <main>
@@ -103,7 +166,7 @@
             <nav class="menu">
               <a class="link navigation" href="">
                 our projects
-                <svg fill="none" width="24" height="24">
+                <svg width="24" height="24">
                   <use href="./img/svg/sprite.svg#icon-chevron-left"></use>
                 </svg>
               </a>
@@ -125,64 +188,67 @@
       <section class="news">
         <div class="container">
           <h2 class="title__list">Latest News</h2>
-          <ul class="list news__list" #="scroll">
-            <li class="item">
-              <picture>
-                <img src="./img/firstLatestNews.jpg" alt="Latest News" />
-              </picture>
-              <div class="card">
-                <h3 class="card__heading">WHAT IS GYM?</h3>
-                <p class="text">
-                  The Global Youth Mentor Program gives motivated Youth Leaders
-                  the tools and support to create lasting systemic change in
-                  their communities.
-                </p>
-              </div>
-            </li>
-            <li class="item">
-              <picture>
-                <img src="./img/secondLatestNews.jpg" alt="Latest News" />
-              </picture>
-              <div class="card">
-                <h3 class="card__heading">
-                  Here is the result of our last project in africa
-                </h3>
-                <p class="text">
-                  The purpose of lorem ipsum is to create a natural looking
-                  block of text (sentence, paragraph, page, etc.)
-                </p>
-              </div>
-            </li>
-            <li class="item">
-              <picture>
-                <img src="./img/thirdLatestNews.jpg" alt="Latest News" />
-              </picture>
-              <div class="card">
-                <h3 class="card__heading">
-                  Time to change something. There is no time left
-                </h3>
-                <p class="text">
-                  The purpose of lorem ipsum is to create a natural looking
-                  block of text (sentence, paragraph, page, etc.) that doesn't.
-                </p>
-              </div>
-            </li>
-            <li class="item">
-              <picture>
-                <img src="./img/4LatestNews.jpg" alt="Latest News" />
-              </picture>
-              <div class="card">
-                <h3 class="card__heading">
-                  How can we change the situation with the global warming
-                  cleaning the ocean?
-                </h3>
-                <p class="text">
-                  The purpose of lorem ipsum is to create a natural looking
-                  block of text sentence.
-                </p>
-              </div>
-            </li>
-          </ul>
+          <div class="scroll-container">
+            <ul class="list news__list" #="scroll">
+              <li class="item">
+                <picture>
+                  <img src="./img/firstLatestNews.jpg" alt="Latest News" />
+                </picture>
+                <div class="card">
+                  <h3 class="card__heading">WHAT IS GYM?</h3>
+                  <p class="text">
+                    The Global Youth Mentor Program gives motivated Youth
+                    Leaders the tools and support to create lasting systemic
+                    change in their communities.
+                  </p>
+                </div>
+              </li>
+              <li class="item">
+                <picture>
+                  <img src="./img/secondLatestNews.jpg" alt="Latest News" />
+                </picture>
+                <div class="card">
+                  <h3 class="card__heading">
+                    Here is the result of our last project in africa
+                  </h3>
+                  <p class="text">
+                    The purpose of lorem ipsum is to create a natural looking
+                    block of text (sentence, paragraph, page, etc.)
+                  </p>
+                </div>
+              </li>
+              <li class="item">
+                <picture>
+                  <img src="./img/thirdLatestNews.jpg" alt="Latest News" />
+                </picture>
+                <div class="card">
+                  <h3 class="card__heading">
+                    Time to change something. There is no time left
+                  </h3>
+                  <p class="text">
+                    The purpose of lorem ipsum is to create a natural looking
+                    block of text (sentence, paragraph, page, etc.) that
+                    doesn't.
+                  </p>
+                </div>
+              </li>
+              <li class="item">
+                <picture>
+                  <img src="./img/4LatestNews.jpg" alt="Latest News" />
+                </picture>
+                <div class="card">
+                  <h3 class="card__heading">
+                    How can we change the situation with the global warming
+                    cleaning the ocean?
+                  </h3>
+                  <p class="text">
+                    The purpose of lorem ipsum is to create a natural looking
+                    block of text sentence.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section>
@@ -283,5 +349,6 @@
     </footer>
 
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/change-theme.js"></script>
   </body>
 </html>
